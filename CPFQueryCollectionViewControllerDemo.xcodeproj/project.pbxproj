@@ -35,14 +35,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1284A6CE1622EF8B001DE6EB /* CPFQueryViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPFQueryViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1284A6CE1622EF8B001DE6EB /* CPFQueryCollectionViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPFQueryCollectionViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1284A6D21622EF8B001DE6EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1284A6D41622EF8B001DE6EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1284A6D61622EF8B001DE6EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1284A6DA1622EF8B001DE6EB /* CPFQueryViewControllerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CPFQueryViewControllerDemo-Info.plist"; sourceTree = "<group>"; };
+		1284A6DA1622EF8B001DE6EB /* CPFQueryCollectionViewControllerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CPFQueryCollectionViewControllerDemo-Info.plist"; sourceTree = "<group>"; };
 		1284A6DC1622EF8B001DE6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1284A6DE1622EF8B001DE6EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1284A6E01622EF8B001DE6EB /* CPFQueryViewControllerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CPFQueryViewControllerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		1284A6E01622EF8B001DE6EB /* CPFQueryCollectionViewControllerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CPFQueryCollectionViewControllerDemo-Prefix.pch"; sourceTree = "<group>"; };
 		1284A6E11622EF8B001DE6EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1284A6E21622EF8B001DE6EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1284A6E41622EF8B001DE6EB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -67,6 +67,7 @@
 		1284A70E1622F1A8001DE6EB /* CPFQueryCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPFQueryCollectionViewController.m; sourceTree = "<group>"; };
 		1284A7101622F234001DE6EB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1284A7121622F298001DE6EB /* ParseAppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseAppInfo.h; sourceTree = "<group>"; };
+		1284A7131622FB27001DE6EB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +110,7 @@
 		1284A6CF1622EF8B001DE6EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1284A6CE1622EF8B001DE6EB /* CPFQueryViewControllerDemo.app */,
+				1284A6CE1622EF8B001DE6EB /* CPFQueryCollectionViewControllerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,7 +148,6 @@
 				1284A6ED1622EF8B001DE6EB /* ViewController.h */,
 				1284A6EE1622EF8B001DE6EB /* ViewController.m */,
 				1284A6D91622EF8B001DE6EB /* Supporting Files */,
-				1284A7121622F298001DE6EB /* ParseAppInfo.h */,
 			);
 			path = CPFQueryViewControllerDemo;
 			sourceTree = "<group>";
@@ -155,10 +155,12 @@
 		1284A6D91622EF8B001DE6EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1284A6DA1622EF8B001DE6EB /* CPFQueryViewControllerDemo-Info.plist */,
+				1284A7131622FB27001DE6EB /* README.md */,
+				1284A6DA1622EF8B001DE6EB /* CPFQueryCollectionViewControllerDemo-Info.plist */,
 				1284A6DB1622EF8B001DE6EB /* InfoPlist.strings */,
 				1284A6DE1622EF8B001DE6EB /* main.m */,
-				1284A6E01622EF8B001DE6EB /* CPFQueryViewControllerDemo-Prefix.pch */,
+				1284A7121622F298001DE6EB /* ParseAppInfo.h */,
+				1284A6E01622EF8B001DE6EB /* CPFQueryCollectionViewControllerDemo-Prefix.pch */,
 				1284A6E41622EF8B001DE6EB /* Default.png */,
 				1284A6E61622EF8B001DE6EB /* Default@2x.png */,
 				1284A6E81622EF8B001DE6EB /* Default-568h@2x.png */,
@@ -169,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1284A6CD1622EF8B001DE6EB /* CPFQueryViewControllerDemo */ = {
+		1284A6CD1622EF8B001DE6EB /* CPFQueryCollectionViewControllerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1284A6F21622EF8B001DE6EB /* Build configuration list for PBXNativeTarget "CPFQueryViewControllerDemo" */;
+			buildConfigurationList = 1284A6F21622EF8B001DE6EB /* Build configuration list for PBXNativeTarget "CPFQueryCollectionViewControllerDemo" */;
 			buildPhases = (
 				1284A6CA1622EF8B001DE6EB /* Sources */,
 				1284A6CB1622EF8B001DE6EB /* Frameworks */,
@@ -181,9 +183,9 @@
 			);
 			dependencies = (
 			);
-			name = CPFQueryViewControllerDemo;
+			name = CPFQueryCollectionViewControllerDemo;
 			productName = CPFQueryViewControllerDemo;
-			productReference = 1284A6CE1622EF8B001DE6EB /* CPFQueryViewControllerDemo.app */;
+			productReference = 1284A6CE1622EF8B001DE6EB /* CPFQueryCollectionViewControllerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -195,7 +197,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = FreedomCard;
 			};
-			buildConfigurationList = 1284A6C81622EF8B001DE6EB /* Build configuration list for PBXProject "CPFQueryViewControllerDemo" */;
+			buildConfigurationList = 1284A6C81622EF8B001DE6EB /* Build configuration list for PBXProject "CPFQueryCollectionViewControllerDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -207,7 +209,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1284A6CD1622EF8B001DE6EB /* CPFQueryViewControllerDemo */,
+				1284A6CD1622EF8B001DE6EB /* CPFQueryCollectionViewControllerDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -319,9 +321,9 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CPFQueryViewControllerDemo/CPFQueryViewControllerDemo-Prefix.pch";
-				INFOPLIST_FILE = "CPFQueryViewControllerDemo/CPFQueryViewControllerDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "CPFQueryViewControllerDemo/CPFQueryCollectionViewControllerDemo-Prefix.pch";
+				INFOPLIST_FILE = "CPFQueryViewControllerDemo/CPFQueryCollectionViewControllerDemo-Info.plist";
+				PRODUCT_NAME = CPFQueryCollectionViewControllerDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -334,9 +336,9 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CPFQueryViewControllerDemo/CPFQueryViewControllerDemo-Prefix.pch";
-				INFOPLIST_FILE = "CPFQueryViewControllerDemo/CPFQueryViewControllerDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "CPFQueryViewControllerDemo/CPFQueryCollectionViewControllerDemo-Prefix.pch";
+				INFOPLIST_FILE = "CPFQueryViewControllerDemo/CPFQueryCollectionViewControllerDemo-Info.plist";
+				PRODUCT_NAME = CPFQueryCollectionViewControllerDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -344,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1284A6C81622EF8B001DE6EB /* Build configuration list for PBXProject "CPFQueryViewControllerDemo" */ = {
+		1284A6C81622EF8B001DE6EB /* Build configuration list for PBXProject "CPFQueryCollectionViewControllerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1284A6F01622EF8B001DE6EB /* Debug */,
@@ -353,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1284A6F21622EF8B001DE6EB /* Build configuration list for PBXNativeTarget "CPFQueryViewControllerDemo" */ = {
+		1284A6F21622EF8B001DE6EB /* Build configuration list for PBXNativeTarget "CPFQueryCollectionViewControllerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1284A6F31622EF8B001DE6EB /* Debug */,
