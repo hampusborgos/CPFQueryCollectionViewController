@@ -1,0 +1,6 @@
+# Ignore xcode wannabe files
+xcuserdata
+project.xcworkspace
+
+# Ignore the cache files
+.DS_Store
