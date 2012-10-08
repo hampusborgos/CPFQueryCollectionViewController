@@ -31,4 +31,20 @@
     return [PFQuery queryWithClassName:@"Foo"];
 }
 
+# pragma mark - Collection View data source
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Foo" forIndexPath:indexPath];
+
+    cell.backgroundColor = [UIColor colorWithRed:[object[@"color"][@"red"] floatValue]
+                                           green:[object[@"color"][@"green"] floatValue]
+                                            blue:[object[@"color"][@"blue"] floatValue]
+                                          alpha:1];
+
+    [(UILabel *)[cell viewWithTag:1] setText:object[@"name"]];
+
+    return cell;
+}
+
 @end

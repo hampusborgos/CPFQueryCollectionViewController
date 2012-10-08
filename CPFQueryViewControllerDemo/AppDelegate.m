@@ -32,9 +32,26 @@
         return NO;
     }
     
-    [Parse setApplicationId:@""
-                  clientKey:@""];
-    // Override point for customization after application launch.
+    // Login to Parse.com
+    [Parse setApplicationId:[ParseApplicationID copy]
+                  clientKey:[ParseClientKey copy]];
+    
+    // Create some dummy objects if there are none
+    if ([[PFQuery queryWithClassName:@"Foo"] countObjects] == 0)
+    {
+        for (int i = 0; i < 25; ++i)
+        {
+            PFObject *testObject = [PFObject objectWithClassName:@"Foo"];
+            [testObject setObject:@"Marklar" forKey:@"name"];
+            [testObject setObject:@{
+                @"red":   @(arc4random_uniform(50) / 100. + 0.5),
+                @"green": @(arc4random_uniform(100) / 100.),
+                @"blue":  @(arc4random_uniform(100) / 100.)
+                } forKey:@"color"];
+            [testObject save];
+        }
+    }
+    
     return YES;
 }
 							
