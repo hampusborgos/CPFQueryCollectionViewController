@@ -26,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (PFQuery *)queryForCollection
+{
+    return [PFQuery queryWithClassName:@"Foo"];
+}
+
 @end

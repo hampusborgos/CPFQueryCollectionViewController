@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import "CPFQueryCollectionViewController.h"
+
+@interface ViewController : CPFQueryCollectionViewController
 
 @end

@@ -8,10 +8,32 @@
 
 #import "AppDelegate.h"
 
+#import "ParseAppInfo.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSString *error = nil;
+    
+    if (ParseApplicationID.length == 0)
+        error = @"Please provide a Parse.com application identifier";
+    if (ParseClientKey.length == 0)
+        error = @"Please provide a Parse.com client key.";
+    
+    
+    if (error)
+    {
+        [[NSAssertionHandler currentHandler]
+            handleFailureInFunction:@(__PRETTY_FUNCTION__)
+                               file:@(__FILE__)
+                         lineNumber:__LINE__
+                        description:@"%@", error];
+        return NO;
+    }
+    
+    [Parse setApplicationId:@""
+                  clientKey:@""];
     // Override point for customization after application launch.
     return YES;
 }

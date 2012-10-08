@@ -30,6 +30,8 @@
 		1284A70A1622F152001DE6EB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1284A6FF1622F152001DE6EB /* Social.framework */; };
 		1284A70B1622F152001DE6EB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1284A7001622F152001DE6EB /* StoreKit.framework */; };
 		1284A70C1622F152001DE6EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1284A7011622F152001DE6EB /* SystemConfiguration.framework */; };
+		1284A70F1622F1A8001DE6EB /* CPFQueryCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1284A70E1622F1A8001DE6EB /* CPFQueryCollectionViewController.m */; };
+		1284A7111622F234001DE6EB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1284A7101622F234001DE6EB /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,10 @@
 		1284A6FF1622F152001DE6EB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1284A7001622F152001DE6EB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1284A7011622F152001DE6EB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1284A70D1622F1A8001DE6EB /* CPFQueryCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPFQueryCollectionViewController.h; sourceTree = "<group>"; };
+		1284A70E1622F1A8001DE6EB /* CPFQueryCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPFQueryCollectionViewController.m; sourceTree = "<group>"; };
+		1284A7101622F234001DE6EB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1284A7121622F298001DE6EB /* ParseAppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseAppInfo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1284A7111622F234001DE6EB /* Security.framework in Frameworks */,
 				1284A7021622F152001DE6EB /* Accounts.framework in Frameworks */,
 				1284A7031622F152001DE6EB /* AdSupport.framework in Frameworks */,
 				1284A7041622F152001DE6EB /* AudioToolbox.framework in Frameworks */,
@@ -92,6 +99,7 @@
 		1284A6C31622EF8B001DE6EB = {
 			isa = PBXGroup;
 			children = (
+				1284A7101622F234001DE6EB /* Security.framework */,
 				1284A6D81622EF8B001DE6EB /* CPFQueryViewControllerDemo */,
 				1284A6D11622EF8B001DE6EB /* Frameworks */,
 				1284A6CF1622EF8B001DE6EB /* Products */,
@@ -131,12 +139,15 @@
 		1284A6D81622EF8B001DE6EB /* CPFQueryViewControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1284A70D1622F1A8001DE6EB /* CPFQueryCollectionViewController.h */,
+				1284A70E1622F1A8001DE6EB /* CPFQueryCollectionViewController.m */,
 				1284A6E11622EF8B001DE6EB /* AppDelegate.h */,
 				1284A6E21622EF8B001DE6EB /* AppDelegate.m */,
 				1284A6EA1622EF8B001DE6EB /* MainStoryboard.storyboard */,
 				1284A6ED1622EF8B001DE6EB /* ViewController.h */,
 				1284A6EE1622EF8B001DE6EB /* ViewController.m */,
 				1284A6D91622EF8B001DE6EB /* Supporting Files */,
+				1284A7121622F298001DE6EB /* ParseAppInfo.h */,
 			);
 			path = CPFQueryViewControllerDemo;
 			sourceTree = "<group>";
@@ -224,6 +235,7 @@
 				1284A6DF1622EF8B001DE6EB /* main.m in Sources */,
 				1284A6E31622EF8B001DE6EB /* AppDelegate.m in Sources */,
 				1284A6EF1622EF8B001DE6EB /* ViewController.m in Sources */,
+				1284A70F1622F1A8001DE6EB /* CPFQueryCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
