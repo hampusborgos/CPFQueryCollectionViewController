@@ -18,6 +18,11 @@
 @property (nonatomic) BOOL isLoading;
 
 /**
+ * Is the query refreshing the collection or fetching more items?
+ */
+@property (nonatomic) BOOL isRefreshing;
+
+/**
  * Should the collection view show an activity indicator while a query is in progress?
  */
 @property (nonatomic) BOOL loadingViewEnabled;
@@ -27,6 +32,16 @@
  * This is not supported for horizontally scrolled collection views
  */
 @property (nonatomic) BOOL pullToRefreshEnabled;
+
+/**
+ * Should the collection use pagination?
+ */
+@property (nonatomic) BOOL paginationEnabled;
+
+/**
+ * The number of objects to show per page
+ */
+@property (nonatomic) NSInteger objectsPerPage;
 
 /**
  * The query to use to fetch the objects.

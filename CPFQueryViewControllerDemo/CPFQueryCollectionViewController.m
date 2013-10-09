@@ -31,6 +31,8 @@
 {
     _loadingViewEnabled = YES;
     _pullToRefreshEnabled = YES;
+    _paginationEnabled = YES;
+    _objectsPerPage = 15;
     _objects = [NSArray new];
     
     _lastLoadedData = nil;
@@ -98,14 +100,30 @@
 {
     PFQuery *query = self.queryForCollection;
     
+    if (_paginationEnabled && !_isRefreshing) {
+        //fetching the next page of objects
+        [query setSkip:self.objects.count];
+    }
+    [query setLimit:_objectsPerPage];
+    
     [self objectsWillLoad];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         self.isLoading = NO;
         if (error)
             self.objects = [NSArray new];
-        else
-            self.objects = objects;
+        else {
+            if (_paginationEnabled && !_isRefreshing) {
+                //add a new page of objects
+                NSMutableArray *mutableObjects = [NSMutableArray arrayWithArray:self.objects];
+                [mutableObjects addObjectsFromArray:objects];
+                self.objects = [NSArray arrayWithArray:mutableObjects];
+            }
+            else {
+                self.objects = objects;
+            }
+        }
+            
        
         [self objectsDidLoad:error];
     }];
@@ -200,11 +218,22 @@
     [_refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
 }
 
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    //if the scrollView has reached the bottom fetch the next page of objects
+    float bottomEdge = scrollView.contentOffset.y + scrollView.frame.size.height;
+    if (bottomEdge >= scrollView.contentSize.height) {
+        [self setIsRefreshing:NO];
+        [self performQuery];
+    }
+}
+
 #pragma mark - EGO Refresh delegate
 
 - (void)egoRefreshTableHeaderDidTriggerRefresh:(PF_EGORefreshTableHeaderView *)view
 {
     // Trigger the refresh
+    [self setIsRefreshing:YES];
     [self performQuery];
 }
 
