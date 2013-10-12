@@ -31,7 +31,7 @@
 {
     _loadingViewEnabled = YES;
     _pullToRefreshEnabled = YES;
-    _paginationEnabled = YES;
+    _paginationEnabled = NO;
     _objectsPerPage = 15;
     _objects = [NSArray new];
     
@@ -100,11 +100,13 @@
 {
     PFQuery *query = self.queryForCollection;
     
-    if (_paginationEnabled && !_isRefreshing) {
+    if (_paginationEnabled) {
+        [query setLimit:_objectsPerPage];
         //fetching the next page of objects
-        [query setSkip:self.objects.count];
+        if (!_isRefreshing) {
+            [query setSkip:self.objects.count];
+        }
     }
-    [query setLimit:_objectsPerPage];
     
     [self objectsWillLoad];
     
