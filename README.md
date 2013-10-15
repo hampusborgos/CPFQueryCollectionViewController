@@ -30,13 +30,11 @@ You can also override the usual `numberOfSectionsInCollectionView:`, `collection
 to tweak the order in which the items appear in the collection. Remember to also override `objectAtIndexPath:`
 in this case.
 
+The initDefaults method allows you to disable pullToRefresh, enable pagination and to set the number of objects per page for when pagination is enabled.
+
 What's Missing
 ====
 
-Pagination is not yet supported since I did not need it for my uses. And it's quite
-compilacted to import. Also it makes much less sense for grid views than for table views
-in general.
-
-Neither is using the view controller with template cells (ie. supplying `className` etc.
-to the controller and let it handle the construction of the cells). Constructing these
+Using the view controller with template cells (ie. supplying `className` etc.
+to the controller and let it handle the construction of the cells) is not yet supported. Constructing these
 through Storyboards is so simple I did not feel it to be necessary.
